@@ -18,7 +18,7 @@ const ProfileModal = ({ user, children }) => {
                         <Image borderRadius="full" boxSize="150px" src={user.pic} alt={user.name} />
                         <Text fontSize="28px">{user.email}</Text>
                     </ModalBody>
-                    <ModalFooter>
+                    <ModalFooter component={'span'} >
                         <Button mr={3} onClick={onClose}>
                             Close
                         </Button>
