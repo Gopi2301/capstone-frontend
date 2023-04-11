@@ -8,7 +8,7 @@ import ProfileModal from './ProfileModal';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import UserListItem from '../userAvatar/userListItem';
-import ChatLoading from './ChatLoading'
+import ChatLoading from './Chatloading'
 
 const SideDrawer = () => {
     const toast = useToast()
