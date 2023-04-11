@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { useToast, Box, Button, Text, Stack } from '@chakra-ui/react'
 import axios from 'axios'
 import { AddIcon } from '@chakra-ui/icons'
-import ChatLoading from './ChatLoading'
 import { getSender } from '../../config/chatLogic.jsx'
 import GroupChatModel from './GroupChatModel'
 
