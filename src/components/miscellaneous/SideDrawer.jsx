@@ -7,7 +7,7 @@ import { ChatState } from '../../context/chatProvider';
 import ProfileModal from './ProfileModal';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
-import ChatLoading from './ChatLoading.jsx'
+import ChatLoading from './ChatLoading'
 import UserListItem from '../userAvatar/userListItem';
 
 
