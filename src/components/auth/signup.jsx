@@ -70,7 +70,7 @@ const Signup = () => {
           "Content-type": "application/json",
         }
       }
-      const { data } = await axios.post("http://localhost:4000/api/user", { name, email, password, pic }, config);
+      const { data } = await axios.post("https://capstoneserver.onrender.com/api/user", { name, email, password, pic }, config);
       toast({
         title: "Registration Successful",
         status: "success",

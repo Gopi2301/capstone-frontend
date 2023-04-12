@@ -41,7 +41,7 @@ const Login = () => {
           "Content-type": "application/json",
         },
       };
-      const { data } = await axios.post("http://localhost:4000/api/user/login", { email, password }, config)
+      const { data } = await axios.post("https://capstoneserver.onrender.com/api/user/login", { email, password }, config)
         .then()
       toast({
         title: "Login successfully",

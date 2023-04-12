@@ -19,7 +19,7 @@ const MyChats = ({ fetchAgain }) => {
                     Authorization: `Bearer ${user.token}`
                 },
             }
-            const { data } = await axios.get("http://localhost:4000/api/chat", config);
+            const { data } = await axios.get("https://capstoneserver.onrender.com/api/chat", config);
             setChats(data)
         } catch (error) {
             toast({

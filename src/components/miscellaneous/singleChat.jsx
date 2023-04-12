@@ -9,7 +9,7 @@ import "./styles.css"
 import ScrollableChat from '../ScrollableChat'
 import io from 'socket.io-client'
 
-const ENDPOINT = "http://localhost:4000";
+const ENDPOINT = "https://capstoneserver.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -31,7 +31,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                 },
             }
             setLoading(true)
-            const { data } = await axios.get(`http://localhost:4000/api/message/${selectedChat._id}`, config);
+            const { data } = await axios.get(`https://capstoneserver.onrender.com/api/message/${selectedChat._id}`, config);
             console.log(message)
             setMessage(data)
             // setLoading(false)
@@ -80,7 +80,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                     },
                 }
                 setNewMessage("");
-                const { data } = await axios.post(`http://localhost:4000/api/message`,
+                const { data } = await axios.post(`https://capstoneserver.onrender.com/api/message`,
                     { content: newMessage, chatId: selectedChat._id }, config)
 
                 socket.emit('new message', data)
